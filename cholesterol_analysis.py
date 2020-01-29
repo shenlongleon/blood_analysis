@@ -35,6 +35,7 @@ def Cholesterol_analysis():
         print("The LDL level is {}.".format(answer_))
         
 def name_function():
+    a = 1
     return
 
 
