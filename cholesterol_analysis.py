@@ -33,6 +33,9 @@ def Cholesterol_analysis():
         print("The HDL level is {}.".format(answer))
         answer_ = LDL_analysis(int(test_info_[1]))
         print("The LDL level is {}.".format(answer_))
+        
+def name_function():
+    return
 
 
 
