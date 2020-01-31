@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+
+def LDL_analysis(LDL_level):
+    if LDL_level >=190:
+        return "Very high"
+    elif 160 <= LDL_level < 190:
+        return "High"
+    elif 130 <= LDL_level < 159:
+        return "Borderline High"
+    else:
+        return "Normal"
+
+
+
+>>>>>>> 9f3fce26bbc3cab17ce0485543f95d2bcb00b4cf
 def HDL_analysis(HDL_level):
     if HDL_level >= 60:
         return "Normal"
@@ -11,6 +27,7 @@ def HDL_analysis(HDL_level):
 
 def Cholesterol_analysis():
     print("Cholesterol_analysis")
+<<<<<<< HEAD
     HDLinput = input("Enter test result: ")
     test_info = HDLinput.split(" = ")
     if test_info[0] == "HDL":
@@ -19,6 +36,22 @@ def Cholesterol_analysis():
 
 def new_feature():
     pass
+=======
+    HDLinput = input("Enter HDL test result: ")
+    test_info = HDLinput.split(" = ")
+    LDLinput = input("Enter LDL test result: ")
+    test_info_ = LDLinput.split(" = ")
+    if test_info[0] == "HDL":
+        answer = HDL_analysis(int(test_info[1]))
+        print("The HDL level is {}.".format(answer))
+        answer_ = LDL_analysis(int(test_info_[1]))
+        print("The LDL level is {}.".format(answer_))
+        
+def name_function():
+    a = 1
+    return
+
+>>>>>>> 9f3fce26bbc3cab17ce0485543f95d2bcb00b4cf
 
 
 def interface():
